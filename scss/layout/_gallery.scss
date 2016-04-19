@@ -1,26 +1,28 @@
 /* gallery display */
-.albums, .movies, .container {
-  @extend %flex-spaced-around;
-}
 
-.spotify, .OMDB {
-    @media (min-width: 780px) {
-    flex: auto;
-    width: 45%;
-  }
+.albums, .movies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 30px;
   margin: 10px;
   color: gray;
   padding: 10px;
   @extend %bottom-border;
   font-weight: 300;
-  text-align: center;
 }
 
- ul { list-style: none; }
+ ul { 
+  list-style: none;
+ }
+
+ li {
+  margin: 10px;
+ }
 
  ul li a {
   opacity: 0.75;
@@ -37,11 +39,5 @@ h1 {
 }
 
 img {
-  width: 150px;
-  margin: 10px;
-  align-self: center;
-}
-
-.lb-data .lb-caption {
-  font-size: 40px;
+  width: 300px;
 }

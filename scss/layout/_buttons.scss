@@ -1,9 +1,16 @@
 
+.buttons {
+	display: flex;
+}
+
 button {
 	padding: 12px 2px;
 	border-radius: 5px;
 	margin: 12px auto;
-	background-color: purple;
+	background-color: gray;
 	border: none;
+	color: white;
+	align-self: center;
+	width: 33%;
 }
 

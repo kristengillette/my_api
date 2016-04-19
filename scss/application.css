@@ -694,48 +694,40 @@ body {
   margin: 0 auto;
 }
 
-/* line 6, layout/_extends.scss */
-.albums, .movies, .container {
-  display: flex;
-  flex-direction: row;
-}
-
-/* line 11, layout/_extends.scss */
-.albums, .movies, .container {
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
 /* line 21, layout/_extends.scss */
 h1 {
   border-bottom: solid 1px gray;
 }
 
 /* gallery display */
-@media (min-width: 780px) {
-  /* line 6, layout/_gallery.scss */
-  .spotify, .OMDB {
-    flex: auto;
-    width: 45%;
-  }
+/* line 3, layout/_gallery.scss */
+.albums, .movies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-/* line 13, layout/_gallery.scss */
+/* line 10, layout/_gallery.scss */
 h1 {
-  font-size: 50px;
+  font-size: 30px;
   margin: 10px;
   color: gray;
   padding: 10px;
   font-weight: 300;
-  text-align: center;
 }
 
-/* line 23, layout/_gallery.scss */
+/* line 19, layout/_gallery.scss */
 ul {
   list-style: none;
 }
 
-/* line 25, layout/_gallery.scss */
+/* line 23, layout/_gallery.scss */
+li {
+  margin: 10px;
+}
+
+/* line 27, layout/_gallery.scss */
 ul li a {
   opacity: 0.75;
   -webkit-transition: all 0.3s linear;
@@ -743,33 +735,34 @@ ul li a {
   transition: all 0.3s linear;
 }
 
-/* line 31, layout/_gallery.scss */
+/* line 33, layout/_gallery.scss */
 ul li a:hover {
   opacity: 1.0;
 }
 
-/* line 35, layout/_gallery.scss */
+/* line 37, layout/_gallery.scss */
 ul li a img {
   border: 3px solid #e1d9ec;
 }
 
-/* line 39, layout/_gallery.scss */
+/* line 41, layout/_gallery.scss */
 img {
-  width: 150px;
-  margin: 10px;
-  align-self: center;
-}
-
-/* line 45, layout/_gallery.scss */
-.lb-data .lb-caption {
-  font-size: 40px;
+  width: 300px;
 }
 
 /* line 2, layout/_buttons.scss */
+.buttons {
+  display: flex;
+}
+
+/* line 6, layout/_buttons.scss */
 button {
   padding: 12px 2px;
   border-radius: 5px;
   margin: 12px auto;
-  background-color: purple;
+  background-color: gray;
   border: none;
+  color: white;
+  align-self: center;
+  width: 33%;
 }

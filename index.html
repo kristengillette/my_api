@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <title>Spotify and Movie API</title>
-	<link rel="stylesheet" href="css/lightbox.css">
   <link rel="stylesheet" href="scss/application.css">
 </head>
 
@@ -11,17 +10,21 @@
     <div class="container">
 	 <div class='spotify'>
 	 <h1>Running Albums</h1>
+   <div class="buttons">
+   <button id="artist-sort">Sort by Artist</button>
+    <button id="album-sort">Sort by Album Title</button>
+    </div>
     <ul class="albums">
     </ul>
-    <button id="artist-sort">Sort by Artist</button>
-    <button id="album-sort">Sort by Album Title</button>
   </div>
     <div class='OMDB'>
     <h1>Running Movies</h1>
-    <ul class="movies">
-    </ul>
+    <div class="buttons">
     <button id="title-sort">Sort by Movie Title</button>
     <button id="year-sort">Sort by Release Year</button>
+    </div>
+    <ul class="movies">
+    </ul>
   </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
