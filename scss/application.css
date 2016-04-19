@@ -694,21 +694,25 @@ body {
   margin: 0 auto;
 }
 
+/* line 6, layout/_extends.scss */
+.albums, .movies {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 11, layout/_extends.scss */
+.albums, .movies {
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 /* line 21, layout/_extends.scss */
 h1 {
   border-bottom: solid 1px gray;
 }
 
 /* gallery display */
-/* line 3, layout/_gallery.scss */
-.albums, .movies {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-/* line 10, layout/_gallery.scss */
+/* line 7, layout/_gallery.scss */
 h1 {
   font-size: 30px;
   margin: 10px;
@@ -717,17 +721,17 @@ h1 {
   font-weight: 300;
 }
 
-/* line 19, layout/_gallery.scss */
+/* line 16, layout/_gallery.scss */
 ul {
   list-style: none;
 }
 
-/* line 23, layout/_gallery.scss */
+/* line 20, layout/_gallery.scss */
 li {
   margin: 10px;
 }
 
-/* line 27, layout/_gallery.scss */
+/* line 24, layout/_gallery.scss */
 ul li a {
   opacity: 0.75;
   -webkit-transition: all 0.3s linear;
@@ -735,17 +739,17 @@ ul li a {
   transition: all 0.3s linear;
 }
 
-/* line 33, layout/_gallery.scss */
+/* line 30, layout/_gallery.scss */
 ul li a:hover {
   opacity: 1.0;
 }
 
-/* line 37, layout/_gallery.scss */
+/* line 34, layout/_gallery.scss */
 ul li a img {
   border: 3px solid #e1d9ec;
 }
 
-/* line 41, layout/_gallery.scss */
+/* line 38, layout/_gallery.scss */
 img {
   width: 300px;
 }

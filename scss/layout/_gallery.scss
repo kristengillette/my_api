@@ -1,10 +1,7 @@
 /* gallery display */
 
 .albums, .movies {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  @extend %flex-spaced-around;
 }
 
 h1 {
