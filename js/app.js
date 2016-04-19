@@ -34,7 +34,7 @@ getAlbumInfo(function(result) {
                 albumHTML += 'Release Date: ' + data.release_date + '</br>';
                 albumHTML += 'SpotifyURL: ' + data.external_urls.spotify + '</br>';
                 albumHTML += '">';
-                albumHTML += '<img src="' + data.images[0].url + '"></a></li>';
+                albumHTML += '<img src="' + data.images[0].url + '"alt="' + data.name + '"></a></li>';
                 $('.albums').html(albumHTML);
             });
         });
