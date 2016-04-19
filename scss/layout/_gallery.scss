@@ -1,0 +1,47 @@
+/* gallery display */
+.albums, .movies, .container {
+  @extend %flex-spaced-around;
+}
+
+.spotify, .OMDB {
+    @media (min-width: 780px) {
+    flex: auto;
+    width: 45%;
+  }
+}
+
+h1 {
+  font-size: 50px;
+  margin: 10px;
+  color: gray;
+  padding: 10px;
+  @extend %bottom-border;
+  font-weight: 300;
+  text-align: center;
+}
+
+ ul { list-style: none; }
+
+ ul li a {
+  opacity: 0.75;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+ ul li a:hover {
+  opacity: 1.0;
+}
+
+ ul li a img {
+  border: 3px solid #e1d9ec;
+}
+
+img {
+  width: 150px;
+  margin: 10px;
+  align-self: center;
+}
+
+.lb-data .lb-caption {
+  font-size: 40px;
+}
