@@ -1,35 +1,37 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>Spotify and Movie API</title>
-  <link rel="stylesheet" href="scss/application.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify and Movie API</title>
+    <link rel="stylesheet" href="scss/application.css" type="text/css">
 </head>
 
 <body>
     <div class="container">
-	 <div class='spotify'>
-	 <h1>Running Albums</h1>
-   <div class="buttons">
-   <button id="artist-sort">Sort by Artist</button>
-    <button id="album-sort">Sort by Album Title</button>
+        <div class='spotify'>
+            <h1>Running Albums</h1>
+            <div class="buttons">
+                <button id="artist-sort">Sort by Artist</button>
+                <button id="album-sort">Sort by Album Title</button>
+            </div>
+            <ul class="albums">
+            </ul>
+        </div>
+        <div class='OMDB'>
+            <h1>Running Movies</h1>
+            <div class="buttons">
+                <button id="title-sort">Sort by Movie Title</button>
+                <button id="year-sort">Sort by Release Year</button>
+            </div>
+            <ul class="movies">
+            </ul>
+        </div>
     </div>
-    <ul class="albums">
-    </ul>
-  </div>
-    <div class='OMDB'>
-    <h1>Running Movies</h1>
-    <div class="buttons">
-    <button id="title-sort">Sort by Movie Title</button>
-    <button id="year-sort">Sort by Release Year</button>
-    </div>
-    <ul class="movies">
-    </ul>
-  </div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script src="js/lightbox.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tinysort/2.3.0/tinysort.min.js"></script>
-<script src="js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinysort/2.3.0/tinysort.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
+
 </html>
